@@ -1,3 +1,6 @@
+---
+Teaching
+
 
 #### Publication list
 [1] 	**Xuhui Wang**, Falai Chen, *[Implicitization, parameterization and singularity computation of Steiner surfaces using moving surfaces](https://www.sciencedirect.com/science/article/pii/S0747717111002227)*, Journal of Symbolic Computation, Volume 47(6), 2012, 733-750.
