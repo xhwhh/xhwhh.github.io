@@ -121,96 +121,111 @@
     </div>
   </li>
 
-  <!-- 2021 -->
-  <li>
-    <strong>Xuhui Wang</strong>, Meng Wu, Yuan Liu, Qian Ni, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0167839621000157">Constructing quadratic birational maps via their complex rational representation</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 85, February 2021, 101969.
-    <div style="text-align:center;border:green solid 1px;">
-      <img src="paper2021-birational2.png" height="110" width="110" alt="Birational map example 1">
-      <img src="paper2021-birational.png" height="120" width="140" alt="Birational map example 2">
-    </div>
-  </li>
-  <li>
-    Qian Ni, Jiansong Deng, <strong>Xuhui Wang</strong>, 
-    <a href="https://link.springer.com/article/10.1007/s11424-020-9390-7">An adaptive collocation method with weighted extended PHT-splines</a>, 
-    <em>Journal of Systems Science and Complexity</em>, Volume 34(1), 2021, 47-67.
-  </li>
+  <style>
+    .paper-list {
+        list-style: none;
+        padding: 0;
+        max-width: 1200px;
+        margin: 20px auto;
+        font-family: 'Segoe UI', Arial, sans-serif;
+    }
 
-  <!-- 2020 -->
-  <li>
-    Qian Ni, <strong>Xuhui Wang</strong>, Jiansong Deng, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0377042720301084">Modified basis functions for MPHT-splines</a>, 
-    <em>Journal of Computational and Applied Mathematics</em>, Volume 375, 2020, 112817.
-  </li>
+    .paper-item {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        transition: transform 0.2s;
+    }
 
-  <!-- 2019 -->
-  <li>
-    Qian Ni, <strong>Xuhui Wang</strong>, Jiansong Deng, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0167839619300652">Modified PHT-splines</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 73, 2019, 37-53.
-  </li>
+    .paper-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-  <!-- 2018 -->
-  <li>
-    Juan Du, Ron Goldman, <strong>Xuhui Wang</strong>, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0747717118300397">Rational curves over generalized complex numbers</a>, 
-    <em>Journal of Symbolic Computation</em>, Volume 93(11), 2018, 56-84.
-  </li>
-  <li>
-    Meng Wu, <strong>Xuhui Wang</strong>, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0045782517307685">A H¹-integrability condition of surfaces with singular parametrizations in isogeometric analysis</a>, 
-    <em>Computer Methods in Applied Mechanics and Engineering</em>, Volume 332, 2018, 136-156.
-  </li>
+    .paper-title {
+        color: #2c3e50;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
 
-  <!-- 2016 -->
-  <li>
-    Ron Goldman, <strong>Xuhui Wang</strong>, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0167839615001466">Two additional advantages of complex μ-bases for non-ruled real quadric surfaces</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 42, 2016, 31-33.
-  </li>
-  <li>
-    Tom Sederberg, Ron Goldman, <strong>Xuhui Wang</strong>, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0167839616300218">Birational 2D Free-Form Deformation of degree 1×n</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 44, 2016, 1-9.
-  </li>
-  <li>
-    <strong>Xuhui Wang</strong>, Ron Goldman, Tom Sederberg, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0167839615001351">Explicit μ-bases for conic sections and planar rational cubic curves</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 41, 2016, 62-75.
-  </li>
+    .paper-authors {
+        color: #7f8c8d;
+        margin-bottom: 8px;
+    }
 
-  <!-- 2015 -->
-  <li>
-    <strong>Xuhui Wang</strong>, Ron Goldman, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S1524070314000289">Quaternion rational surfaces: Rational surfaces generated from the quaternion product of two rational space curves</a>, 
-    <em>Graphical Models</em>, Volume 81, 2015, 18-32.
-  </li>
-  <li>
-    Ron Goldman, Tom Sederberg, <strong>Xuhui Wang</strong>, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0167839615000849">Complex μ-bases for real quadric surfaces</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 37, 2015, 57-68.
-  </li>
+    .paper-journal {
+        color: #3498db;
+        font-style: italic;
+    }
 
-  <!-- 2013 -->
-  <li>
-    <strong>Xuhui Wang</strong>, Ron Goldman, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0167839613000502">μ-Bases for complex rational curves</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 30(7), 2013, 623-635.
-  </li>
+    .paper-images {
+        margin-top: 15px;
+        text-align: center;
+    }
 
-  <!-- 2012 -->
-  <li>
-    <strong>Xuhui Wang</strong>, Falai Chen, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S0747717111002227">Implicitization, parameterization and singularity computation of Steiner surfaces using moving surfaces</a>, 
-    <em>Journal of Symbolic Computation</em>, Volume 47(6), 2012, 733-750.
-  </li>
-  <li>
-    Xiaoran Shi, <strong>Xuhui Wang</strong>, Ron Goldman, 
-    <a href="https://www.sciencedirect.com/science/article/pii/S1524070314000289">Using μ-bases to implicitize rational surfaces with a pair of orthogonal directrices</a>, 
-    <em>Computer Aided Geometric Design</em>, Volume 29(7), 2012, 541-554.
-  </li>
-</ol>
+    .paper-images img {
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+        margin: 5px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .highlight-author {
+        color: #e74c3c;
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        .paper-item {
+            padding: 15px;
+        }
+        
+        .paper-title {
+            font-size: 1em;
+        }
+    }
+</style>
+
+<ul class="paper-list">
+    <!-- 2024 -->
+    <li class="paper-item">
+        <div class="paper-authors">
+            <span class="highlight-author">Xuhui Wang</span>, Yanchun Zhao, Qian Ni, Shuo Tang
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0377042723005927" class="paper-title">
+            Nonparametric density estimation with nonuniform B-spline bases
+        </a>
+        <div class="paper-journal">
+            Journal of Computational and Applied Mathematics, Volume 440, April 2024, 115648
+        </div>
+        <div class="paper-images">
+            <img src="paper-pdf.png" alt="B-spline density estimation">
+        </div>
+    </li>
+
+    <!-- 2021 -->
+    <li class="paper-item">
+        <div class="paper-authors">
+            <span class="highlight-author">Xuhui Wang</span>, Meng Wu, Yuan Liu, Qian Ni
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0167839621000157" class="paper-title">
+            Constructing quadratic birational maps via their complex rational representation
+        </a>
+        <div class="paper-journal">
+            Computer Aided Geometric Design, Volume 85, February 2021, 101969
+        </div>
+        <div class="paper-images">
+            <img src="paper2021-birational2.png" alt="Birational map example 1">
+            <img src="paper2021-birational.png" alt="Birational map example 2">
+        </div>
+    </li>
+
+    <!-- 其他条目按相同结构添加 -->
+</ul>
 
         
        </ul>
