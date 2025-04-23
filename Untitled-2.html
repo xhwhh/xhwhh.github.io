@@ -1,0 +1,158 @@
+<style>
+  /* 整体色调调整 */
+  .wrapper {
+    max-width: 1000px; /* 适当缩小容器宽度 */
+    margin: 30px auto;
+    padding: 30px;
+    background: #f8fafc; /* 柔和浅蓝背景 */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 更淡的阴影 */
+  }
+
+  .content-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  /* 图片容器样式 */
+  .profile-img-container {
+    flex: 0 0 180px; /* 缩小容器宽度 */
+    order: -1;
+    position: relative;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    border: 1px solid #e2e8f0; /* 添加细边框 */
+  }
+
+  /* 主内容区域 */
+  .main-content {
+    flex: 1;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #4a5568; /* 深灰蓝色 */
+  }
+
+  /* 标题优化 */
+  h2 {
+    color: #2b6cb0; /* 柔和蓝色 */
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #c3dafe; /* 浅蓝色分隔线 */
+  }
+
+  h4 {
+    color: #4299e1; /* 主题蓝色 */
+    margin: 1.2rem 0 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  /* 社交链接优化 */
+  .social-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .author-social {
+    color: #4a5568;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid transparent;
+  }
+
+  .author-social:hover {
+    color: #2b6cb0;
+    border-bottom-color: #90cdf4;
+  }
+
+  /* 分割线优化 */
+  hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 1.5rem 0;
+  }
+
+  /* 列表优化 */
+  ul, ol {
+    line-height: 1.6;
+    margin: 0.8rem 0;
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin: 0.6rem 0;
+    padding-left: 0.5rem;
+    position: relative;
+  }
+
+  ol li::before {
+    content: counter(list-item) ".";
+    position: absolute;
+    left: -1.5em;
+    color: #90cdf4; /* 蓝色编号 */
+    font-weight: 500;
+  }
+
+  /* 出版物样式 */
+  li strong {
+    color: #2b6cb0;
+  }
+
+  li a {
+    color: #4299e1;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  li a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+  }
+
+  li em {
+    color: #718096;
+    font-style: normal;
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.9em;
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .profile-img-container {
+      width: 50%;
+      max-width: 180px;
+    }
+
+    .wrapper {
+      margin: 15px;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+</style>

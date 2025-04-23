@@ -1,0 +1,205 @@
+<style>
+  /* 新增现代布局样式 */
+  .wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .content-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  /* 图片容器样式 */
+  .profile-img-container {
+    flex: 0 0 250px;
+    order: -1; /* 强制图片容器在前 */
+  }
+
+  .profile-img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    object-fit: cover;
+    aspect-ratio: 3/4;
+  }
+
+  /* 主内容区域 */
+  .main-content {
+    flex: 1;
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    color: #444;
+  }
+
+  /* 标题样式优化 */
+  h2 {
+    color: #2c3e50;
+    margin: 0 0 1.2rem;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.8rem;
+  }
+
+  h4 {
+    color: #34495e;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+  }
+
+  /* 社交链接优化 */
+  .social-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.2rem 0;
+  }
+
+  .author-social {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .author-social:hover {
+    color: #1a5276;
+  }
+
+  /* 列表样式优化 */
+  ul, ol {
+    line-height: 1.7;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin: 0.8rem 0;
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+    
+    .profile-img-container {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .wrapper {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+
+  /* 保留原有功能样式 */
+  button.accordion {
+    /* 保持原有样式不变 */
+  }
+</style>
+
+<body>
+  <div class="wrapper">
+    <div class="content-container">
+      <!-- 左侧边栏 -->
+      <div class="profile-img-container">
+        <img src="myfig.png" class="profile-img" alt="Xuhui Wang">
+        <h3>Xuhui Wang</h3>
+        <div class="social-row">
+          <a href="mailto:xhw@hfut.edu.cn" class="author-social">
+            xhw AT hfut.edu.cn
+          </a>
+          <a href="mailto:xhw@hhu.edu.cn" class="author-social">
+            xhw AT hhu.edu.cn
+          </a>
+        </div>
+      </div>
+      
+      <div class="main-content">
+        <p style="font-size:1.1rem; line-height:1.6">Professor<br>School of Mathematics<br>Hohai University</p>
+        
+        
+
+        <!-- 保持其他内容结构不变 -->
+
+        
+        <h4>Research interests</h4>
+        <hr>
+        <p>Computer Aided Geometric Design (CAGD), Isogeometric Analysis (IGA).</p>
+        
+        
+        <h4>Work Experience</h4>
+        <hr>
+        <ul>
+          <li>Professor, Hohai University, 2022.5 - Now</li>
+          <li>Professor, Hefei University of Technology, 2009.12 - 2022.5</li>
+          <!-- 其他经历保持相同结构 -->
+        </ul>
+
+        
+        <h4>Selected Publications</h4>
+        <hr>
+        <ol>
+          <li>
+            <strong>Xuhui Wang</strong>, Yanchun Zhao, Qian Ni, Shuo Tang, 
+            <a href="https://www.sciencedirect.com/science/article/pii/S0377042723005927">Nonparametric density estimation with nonuniform B-spline bases</a>, 
+            <em>Journal of Computational and Applied Mathematics</em>, Volume 440, April 2024, 115648.
+          </li>
+          <li>
+            <strong>Xuhui Wang</strong>, Falai Chen, <em><a href="https://www.sciencedirect.com/science/article/pii/S0747717111002227">Implicitization, parameterization and singularity computation of Steiner surfaces using moving surfaces</a></em>, Journal of Symbolic Computation, Volume 47(6), 2012, 733-750.
+          </li>
+          
+          <li>
+            Xiaoran Shi, <strong>Xuhui Wang</strong>, Ron Goldman, <em><a href="https://www.sciencedirect.com/science/article/pii/S1524070314000289">Using μ-bases to implicitize rational surfaces with a pair of orthogonal directrices</a></em>, Computer Aided Geometric Design, Volume 29(7), 2012, 541-554.
+          </li>
+          <li>
+            <strong>Xuhui Wang</strong>, Ron Goldman, <em><a href="https://www.sciencedirect.com/science/article/pii/S0167839613000502">μ-Bases for complex rational curves</a></em>, Computer Aided Geometric Design, Volume 30(7), 2013, 623-635.
+          </li>
+          <li>
+            Ron Goldman, Tom Sederberg, <strong>Xuhui Wang</strong>, <em><a href="https://www.sciencedirect.com/science/article/pii/S0167839615000849">Complex μ-bases for real quadric surfaces</a></em>, Computer Aided Geometric Design, Volume 37, 2015, 57-68.
+          </li>
+          <li>
+            <strong>Xuhui Wang</strong>, Ron Goldman, <em><a href="https://www.sciencedirect.com/science/article/pii/S1524070314000289">Quaternion rational surfaces: Rational surfaces generated from the quaternion product of two rational space curves</a></em>, Graphical Models, 2015, Volumn 81, 18-32.
+          </li>
+          <li>
+            <strong>Xuhui Wang</strong>, Ron Goldman, Tom Sederberg, <em><a href="https://www.sciencedirect.com/science/article/pii/S0167839615001351">Explicit μ-bases for conic sections and planar rational cubic curves</a></em>, Computer Aided Geometric Design, Volume 41, 2016, 62-75.
+          </li>
+          <li>
+            Tom Sederberg, Ron Goldman, <strong>Xuhui Wang</strong>, <em><a href="https://www.sciencedirect.com/science/article/pii/S0167839616300218">Birational 2D Free-Form Deformation of degree 1×n</a></em>, Computer Aided Geometric Design, Volume 44, 2016, 1-9.
+          </li>
+          <li>
+            Ron Goldman, <strong>Xuhui Wang</strong>, <em><a href="https://www.sciencedirect.com/science/article/pii/S0167839615001466">Two additional advantages of complex μ-bases for non-ruled real quadric surfaces</a></em>, Computer Aided Geometric Design, Volume 42, 2016, 31-33.
+          </li>
+          <li>
+            Juan Du, Ron Goldman, <strong>Xuhui Wang</strong>, <em><a href="https://www.sciencedirect.com/science/article/pii/S0747717118300397">Rational curves over generalized complex numbers</a></em>, Journal of Symbolic Computation, Volume 93(11), 2018, 56-84.
+          </li>
+          <li>
+            Meng Wu, <strong>Xuhui Wang</strong>, <em><a href="https://www.sciencedirect.com/science/article/pii/S0045782517307685">A H1-integrability condition of surfaces with singular parametrizations in isogeometric analysis</a></em>, Computer Methods in Applied Mechanics and Engineering, Volume 332, 2018, 136-156.
+          </li>
+          <li>
+            Qian Ni, <strong>Xuhui Wang</strong>, Jiansong Deng, <em><a href="https://www.sciencedirect.com/science/article/pii/S0167839619300652">Modified PHT-splines</a></em>, Computer Aided Geometric Design, Volume 73, 2019, 37-53.
+          </li>
+          <li>
+            Qian Ni, <strong>Xuhui Wang</strong>, Jiansong Deng, <em><a href="https://www.sciencedirect.com/science/article/pii/S0377042720301084">Modified basis functions for MPHT-splines</a></em>, Journal of Computational and Applied Mathematics, Volume 375, 2020, 112817.
+          </li>
+          <li>
+            <strong>Xuhui Wang</strong>, Meng Wu, Yuan Liu and Qian Ni, <em><a href="https://www.sciencedirect.com/science/article/pii/S0167839621000157">Constructing quadratic birational maps via their complex rational representation</a></em>, Computer Aided Geometric Design, Volume 85, 2021, 101969.
+          </li>
+          <li>
+            Qian Ni, Jiansong Deng, <strong>Xuhui Wang</strong>, <em><a href="https://link.springer.com/article/10.1007/s11424-020-9390-7">An adaptive collocation method with weighted extended PHT-splines</a></em>, Journal of Systems Science and Complexity, Volumn 34(1), 2021, 47-67.
+          </li>
+          <!-- 其他出版物保持相同结构 -->
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
